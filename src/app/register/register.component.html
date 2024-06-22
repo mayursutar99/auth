@@ -1,0 +1,12 @@
+<div class="form-container">
+    <form action="/login">
+        <h2>Register</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" #userName autocomplete="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" #pass1 autocomplete="current-password">
+        <button type="" (click)="Register(userName.value, pass1.value)">Register</button>
+        <a routerLink="/login">Already user?</a>
+    </form>
+</div>
+
